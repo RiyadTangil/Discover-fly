@@ -11,7 +11,6 @@ function ticketCounter(id, isIncrease) {
     totalCost();
 }
 
-
 function totalCost() {
     const firstTicketAmount = getInputValue('firstTicketNumber');
     const firstClassValue = 150 * firstTicketAmount;
@@ -25,12 +24,6 @@ function totalCost() {
     document.getElementById('totalCost').innerText = grandTotal;
 }
 
-function getInputValue(product) {
-    const inputValue = document.getElementById(product).value;
-    const newInputValue = parseInt(inputValue);
-    return newInputValue;
-}
-
 function userInformation(){
    document.getElementById('bookingFrom').style.display ="none";
    document.getElementById('booking-information').style.display = "block";
@@ -39,7 +32,12 @@ function userInformation(){
    document.getElementById('subtotalInfo').innerText = document.getElementById('subtotal').innerText ;
    document.getElementById('vatInfo').innerText =  document.getElementById('vat').innerText ;
    document.getElementById('totalCostInfo').innerText =  document.getElementById('totalCost').innerText ;
-  
+}
+
+function getInputValue(product) {
+    const inputValue = document.getElementById(product).value;
+    const newInputValue = parseInt(inputValue);
+    return newInputValue;
 }
 
 
