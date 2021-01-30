@@ -28,7 +28,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div id="bookingFrom" class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -98,8 +98,19 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="userInformation()" class="btn-style">Book Now</button>
         </div>
+
+        <div id="booking-information">
+            
+                <h1>Your  number of First Class ticket = <span id="firstTicketInfo" >0</span> </h1>
+                <h1>Your  number of Economy Class ticket = <span id="economyTicketInfo" >0</span> </h1>
+                <h1> Subtotal amonut = <span id="subtotalInfo" >0</span> </h1>
+                <h1> Total Vat = <span id="vatInfo" >0</span> </h1>
+                <h1> Total Cost = <span id="totalCostInfo" >0</span> </h1>
+        </div>
+
+
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>

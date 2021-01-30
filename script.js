@@ -31,3 +31,15 @@ function getInputValue(product) {
     return newInputValue;
 }
 
+function userInformation(){
+   document.getElementById('bookingFrom').style.display ="none";
+   document.getElementById('booking-information').style.display = "block";
+   document.getElementById('firstTicketInfo').innerText =  getInputValue('firstTicketNumber') ;
+   document.getElementById('economyTicketInfo').innerText =  getInputValue('economyTicketNumber') ;
+   document.getElementById('subtotalInfo').innerText = document.getElementById('subtotal').innerText ;
+   document.getElementById('vatInfo').innerText =  document.getElementById('vat').innerText ;
+   document.getElementById('totalCostInfo').innerText =  document.getElementById('totalCost').innerText ;
+  
+}
+
+
